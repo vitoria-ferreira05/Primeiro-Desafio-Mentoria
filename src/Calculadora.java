@@ -4,9 +4,11 @@ public class Calculadora {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        
+
         int operacao;
         int primeiroNumero = 2, segundoNumero = 3;
+        int qtdadeOperacoes = 0;
+
         do {
             System.out.println("---CALCULADORA--- \n" +
                     "Qual operacao deseja realizar? \n" +
@@ -14,7 +16,8 @@ public class Calculadora {
                     "2. Subtrair \n" +
                     "3. Multiplicar \n" +
                     "4. Dividir \n" +
-                    "5. Sair");
+                    "5. Verificar quantas operações foram realizadas \n" +
+                    "6. Sair");
 
             operacao = sc.nextInt();
 
@@ -28,26 +31,33 @@ public class Calculadora {
                 case 1:
                     int resultadoSoma = operacaoSoma(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " + " + segundoNumero + " = " + resultadoSoma);
+                    qtdadeOperacoes++;
                     break;
                 case 2:
                     int resultadoSubtracao = operacaoSubtrair(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " - " + segundoNumero + " = " + resultadoSubtracao);
+                    qtdadeOperacoes++;
                     break;
                 case 3:
                     int resultadoMulticacao = operacaoMultiplicar(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " * " + segundoNumero + " = " + resultadoMulticacao);
+                    qtdadeOperacoes++;
                     break;
                 case 4:
                     int resultadoDivisao = operacaoDividir(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " / " + segundoNumero + " = " + resultadoDivisao);
+                    qtdadeOperacoes++;
                     break;
                 case 5:
+                    qtdadeOperacoes +=quantidadeDeOperacoesRealizadadas(qtdadeOperacoes);
+                    break;
+                case 6:
                     System.out.println("A calculadora foi encerrada!");
                     break;
                 default:
                     System.out.println("Esta opcao esta incorreta, digite novamente.");
             }
-        } while (operacao != 5);
+        } while (operacao != 6);
     }
 
     public static int operacaoSoma(int primeiroNumero, int segundoNumero) {
@@ -64,5 +74,10 @@ public class Calculadora {
 
     public static int operacaoDividir(int primeiroNumero, int segundoNumero) {
         return primeiroNumero / segundoNumero;
+    }
+
+    public static int quantidadeDeOperacoesRealizadadas(int qtdadeOperacoes){
+        System.out.println("A quantidade de operacoes realizadas na calculadora foi: " + qtdadeOperacoes + " vezes");
+        return qtdadeOperacoes;
     }
 }
