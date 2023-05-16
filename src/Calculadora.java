@@ -6,8 +6,10 @@ public class Calculadora {
         Scanner sc = new Scanner(System.in);
 
         int operacao;
-        int primeiroNumero = 2, segundoNumero = 3;
         int qtdadeOperacoes = 0;
+        int primeiroNumero = 0;
+        int segundoNumero = 0;
+
 
         do {
             System.out.println("---CALCULADORA--- \n" +
@@ -21,35 +23,37 @@ public class Calculadora {
 
             operacao = sc.nextInt();
 
-//            System.out.print("Digite o primeiro numero: ");
-//            int primeiroNumero = sc.nextInt();
-//
-//            System.out.print("Digite o segundo numero: ");
-//            int segundoNumero = sc.nextInt();
-
             switch (operacao) {
                 case 1:
+                    primeiroNumero = entradaDeValoresDoUsuario();
+                    segundoNumero = entradaDeValoresDoUsuario();
                     int resultadoSoma = operacaoSoma(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " + " + segundoNumero + " = " + resultadoSoma);
                     qtdadeOperacoes++;
                     break;
                 case 2:
+                    primeiroNumero = entradaDeValoresDoUsuario();
+                    segundoNumero = entradaDeValoresDoUsuario();
                     int resultadoSubtracao = operacaoSubtrair(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " - " + segundoNumero + " = " + resultadoSubtracao);
                     qtdadeOperacoes++;
                     break;
                 case 3:
+                    primeiroNumero = entradaDeValoresDoUsuario();
+                    segundoNumero = entradaDeValoresDoUsuario();
                     int resultadoMulticacao = operacaoMultiplicar(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " * " + segundoNumero + " = " + resultadoMulticacao);
                     qtdadeOperacoes++;
                     break;
                 case 4:
+                    primeiroNumero = entradaDeValoresDoUsuario();
+                    segundoNumero = entradaDeValoresDoUsuario();
                     int resultadoDivisao = operacaoDividir(primeiroNumero, segundoNumero);
                     System.out.println(primeiroNumero + " / " + segundoNumero + " = " + resultadoDivisao);
                     qtdadeOperacoes++;
                     break;
                 case 5:
-                    qtdadeOperacoes +=quantidadeDeOperacoesRealizadadas(qtdadeOperacoes);
+                    quantidadeDeOperacoesRealizadadas(qtdadeOperacoes);
                     break;
                 case 6:
                     System.out.println("A calculadora foi encerrada!");
@@ -76,8 +80,16 @@ public class Calculadora {
         return primeiroNumero / segundoNumero;
     }
 
-    public static int quantidadeDeOperacoesRealizadadas(int qtdadeOperacoes){
+    public static void quantidadeDeOperacoesRealizadadas(int qtdadeOperacoes) {
         System.out.println("A quantidade de operacoes realizadas na calculadora foi: " + qtdadeOperacoes + " vezes");
-        return qtdadeOperacoes;
+    }
+
+    public static int entradaDeValoresDoUsuario() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero: ");
+        int numero = sc.nextInt();
+
+        return numero;
     }
 }
