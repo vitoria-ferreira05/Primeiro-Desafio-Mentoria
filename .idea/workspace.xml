@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68b982ee-b5ec-4227-bd66-83b79fee983a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2PhGlmUMNmBYwtBIlUdzT5ygszn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,8 +38,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Calculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Calculadora" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Desafio.1 Mentoria" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -45,7 +47,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculadora" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
