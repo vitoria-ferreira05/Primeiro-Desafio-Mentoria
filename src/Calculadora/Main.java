@@ -3,12 +3,13 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Main {
+    private static Scanner sc = new Scanner(System.in);
+    private static Soma soma = new Soma();
+    private static Subtracao subtracao = new Subtracao();
+    private static Multiplicacao multiplicacao = new Multiplicacao();
+    private static Divisao divisao = new Divisao();
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Soma soma = new Soma();
-        Subtracao subtracao = new Subtracao();
-        Multiplicacao multiplicacao = new Multiplicacao();
-        Divisao divisao = new Divisao();
 
         while (true) {
             System.out.println("---CALCULADORA--- \n" +
@@ -24,20 +25,16 @@ public class Main {
 
             switch (operacao) {
                 case 1:
-                    soma.calcularOperacoes();
-                    soma.contador();
+                    soma.calcularOperacoes(getValoresDoUsuario());
                     break;
                 case 2:
-                    subtracao.calcularOperacoes();
-                    subtracao.contador();
+                    subtracao.calcularOperacoes(getValoresDoUsuario());
                     break;
                 case 3:
-                    multiplicacao.calcularOperacoes();
-                    multiplicacao.contador();
+                    multiplicacao.calcularOperacoes(getValoresDoUsuario());
                     break;
                 case 4:
-                    divisao.calcularOperacoes();
-                    divisao.contador();
+                    divisao.calcularOperacoes(getValoresDoUsuario());
                     break;
                 case 5:
                     System.out.println(Soma.contador + Multiplicacao.contador + Divisao.contador + Subtracao.contador);
@@ -51,5 +48,15 @@ public class Main {
                     break;
             }
         }
+    }
+
+    public static int[] getValoresDoUsuario() {
+        int[] valores = new int[2];
+        System.out.print("Digite o primeiro numero: ");
+        valores[0] = sc.nextInt();
+        System.out.print("Digite o segundo numero: ");
+        valores[1] = sc.nextInt();
+
+        return valores;
     }
 }

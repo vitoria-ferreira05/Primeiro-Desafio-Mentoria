@@ -2,10 +2,9 @@ package Calculadora;
 
 public interface Calculadora {
 
-    void calcularOperacoes();
+    void calcularOperacoes(int[] valores);
 
     int contador();
-
 }
 
 
