@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Divisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Divisao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Multiplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Multiplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora/QuantidadeOperacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/QuantidadeOperacoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculadora/QuantidadeOperacoes.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Soma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Soma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Subtracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Subtracao.java" afterDir="false" />
     </list>
@@ -41,7 +41,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vitoria.Ferreira/Documents/Exercicios Intellij/Atividade-Pet-Shop&quot;
   }
 }</component>
   <component name="RunManager">

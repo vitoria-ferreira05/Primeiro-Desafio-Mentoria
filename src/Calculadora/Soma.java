@@ -1,11 +1,13 @@
 package Calculadora;
 
+import java.util.Scanner;
+
 public class Soma implements Calculadora {
+    public static int contador = 0;
     private int primeiroNumero, segundoNumero;
 
-    public Soma(int primeiroNumero, int segundoNumero) {
-        this.primeiroNumero = primeiroNumero;
-        this.segundoNumero = segundoNumero;
+    public Soma() {
+
     }
 
     public int getPrimeiroNumero() {
@@ -19,8 +21,17 @@ public class Soma implements Calculadora {
 
     @Override
     public void calcularOperacoes() {
-       int soma = getPrimeiroNumero() + getSegundoNumero();
-        System.out.println(primeiroNumero + " + " + segundoNumero + " = " + soma );
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o primeiro numero: ");
+        primeiroNumero = sc.nextInt();
+        System.out.print("Digite o segundo numero: ");
+        segundoNumero = sc.nextInt();
+        int soma = getPrimeiroNumero() + getSegundoNumero();
+        System.out.println(primeiroNumero + " + " + segundoNumero + " = " + soma);
     }
 
+    @Override
+    public int contador() {
+        return Soma.contador = Soma.contador + 1;
+    }
 }

@@ -2,13 +2,13 @@ package Calculadora;
 
 import java.util.Scanner;
 
-import static Calculadora.QuantidadeOperacoes.quantidadeDeOperacoesRealizadadas;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        QuantidadeOperacoes qtdadeOperacoes = new QuantidadeOperacoes();
+        Soma soma = new Soma();
+        Subtracao subtracao = new Subtracao();
+        Multiplicacao multiplicacao = new Multiplicacao();
+        Divisao divisao = new Divisao();
 
         while (true) {
             System.out.println("---CALCULADORA--- \n" +
@@ -24,23 +24,24 @@ public class Main {
 
             switch (operacao) {
                 case 1:
-                    Soma soma = new Soma(2, 2);
                     soma.calcularOperacoes();
+                    soma.contador();
                     break;
                 case 2:
-                    Subtracao subtracao = new Subtracao(3, 2);
                     subtracao.calcularOperacoes();
+                    subtracao.contador();
                     break;
                 case 3:
-                    Multiplicacao multiplicacao = new Multiplicacao(5, 5);
                     multiplicacao.calcularOperacoes();
+                    multiplicacao.contador();
                     break;
                 case 4:
-                    Divisao divisao = new Divisao(10, 5);
                     divisao.calcularOperacoes();
+                    divisao.contador();
                     break;
                 case 5:
-                    quantidadeDeOperacoesRealizadadas();
+                    System.out.println(Soma.contador + Multiplicacao.contador + Divisao.contador + Subtracao.contador);
+                    break;
                 case 6:
                     System.out.println("A calculadora foi encerrada!");
                     System.exit(0);
@@ -51,5 +52,4 @@ public class Main {
             }
         }
     }
-
 }
