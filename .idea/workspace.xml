@@ -7,11 +7,7 @@
     <list default="true" id="68b982ee-b5ec-4227-bd66-83b79fee983a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora/Divisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Divisao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculadora/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora/Multiplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Multiplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora/Soma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Soma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora/Subtracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculadora/Subtracao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

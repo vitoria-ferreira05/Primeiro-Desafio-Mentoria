@@ -11,6 +11,6 @@ public class Divisao extends Calculadora {
         int divisao = valores[0] / valores[1];
         System.out.println(valores[0] + " / " + valores[1] + " = " + divisao);
 
-        contador();
+        somarContador();
     }
 }

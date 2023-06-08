@@ -11,6 +11,6 @@ public class Soma extends Calculadora {
         int soma = valores[0] + valores[1];
         System.out.println(valores[0] + " + " + valores[1] + " = " + soma);
 
-        contador();
+        somarContador();
     }
 }

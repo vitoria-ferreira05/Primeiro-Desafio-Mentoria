@@ -11,6 +11,6 @@ public class Multiplicacao extends Calculadora {
         int multiplicacao = valores[0] * valores[1];
         System.out.println(valores[0] + " * " + valores[1] + " = " + multiplicacao);
 
-        contador();
+        somarContador();
     }
 }

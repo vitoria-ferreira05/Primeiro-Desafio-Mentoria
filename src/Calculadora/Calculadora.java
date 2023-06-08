@@ -8,8 +8,12 @@ public abstract class Calculadora {
 
     }
 
-    static int contador() {
-       return Calculadora.contador++;
+    static int somarContador() {
+       return contador++;
+    }
+
+    static int getContador(){
+        return contador;
     }
 }
 

@@ -2,7 +2,7 @@ package Calculadora;
 
 import java.util.Scanner;
 
-import static Calculadora.Calculadora.contador;
+import static Calculadora.Calculadora.getContador;
 
 public class Main {
     private static Scanner sc = new Scanner(System.in);
@@ -39,7 +39,7 @@ public class Main {
                     divisao.calcularOperacoes(getValoresDoUsuario());
                     break;
                 case 5:
-                    System.out.println(Calculadora.contador());
+                    System.out.println(getContador());
                     break;
                 case 6:
                     System.out.println("A calculadora foi encerrada!");

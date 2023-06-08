@@ -11,6 +11,6 @@ public class Subtracao extends Calculadora {
         int subtracao = valores[0] - valores[1];
         System.out.println(valores[0] + " - " + valores[1] + " = " + subtracao);
 
-        contador();
+        somarContador();
     }
 }
