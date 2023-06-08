@@ -1,8 +1,6 @@
 package Calculadora;
 
-public class Soma implements Calculadora {
-
-    public static int contador = 0;
+public class Soma extends Calculadora {
 
     public Soma() {
 
@@ -14,10 +12,5 @@ public class Soma implements Calculadora {
         System.out.println(valores[0] + " + " + valores[1] + " = " + soma);
 
         contador();
-    }
-
-    @Override
-    public int contador() {
-        return Soma.contador++;
     }
 }

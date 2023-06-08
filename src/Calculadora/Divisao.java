@@ -1,7 +1,6 @@
 package Calculadora;
 
-public class Divisao implements Calculadora {
-    static int contador = 0;
+public class Divisao extends Calculadora {
 
     public Divisao() {
 
@@ -13,10 +12,5 @@ public class Divisao implements Calculadora {
         System.out.println(valores[0] + " / " + valores[1] + " = " + divisao);
 
         contador();
-    }
-
-    @Override
-    public int contador() {
-        return Divisao.contador++;
     }
 }

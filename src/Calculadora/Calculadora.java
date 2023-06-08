@@ -1,10 +1,16 @@
 package Calculadora;
 
-public interface Calculadora {
+public abstract class Calculadora {
 
-    void calcularOperacoes(int[] valores);
+    private static int contador;
 
-    int contador();
+    void calcularOperacoes(int[] valores) {
+
+    }
+
+    static int contador() {
+       return Calculadora.contador++;
+    }
 }
 
 

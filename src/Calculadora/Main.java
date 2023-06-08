@@ -2,6 +2,8 @@ package Calculadora;
 
 import java.util.Scanner;
 
+import static Calculadora.Calculadora.contador;
+
 public class Main {
     private static Scanner sc = new Scanner(System.in);
     private static Soma soma = new Soma();
@@ -37,7 +39,7 @@ public class Main {
                     divisao.calcularOperacoes(getValoresDoUsuario());
                     break;
                 case 5:
-                    System.out.println(Soma.contador + Multiplicacao.contador + Divisao.contador + Subtracao.contador);
+                    System.out.println(Calculadora.contador());
                     break;
                 case 6:
                     System.out.println("A calculadora foi encerrada!");

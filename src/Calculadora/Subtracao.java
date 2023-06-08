@@ -1,7 +1,6 @@
 package Calculadora;
 
-public class Subtracao implements Calculadora {
-    public static int contador = 0;
+public class Subtracao extends Calculadora {
 
     public Subtracao() {
 
@@ -13,10 +12,5 @@ public class Subtracao implements Calculadora {
         System.out.println(valores[0] + " - " + valores[1] + " = " + subtracao);
 
         contador();
-    }
-
-    @Override
-    public int contador() {
-        return Subtracao.contador++;
     }
 }

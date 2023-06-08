@@ -1,7 +1,6 @@
 package Calculadora;
 
-public class Multiplicacao implements Calculadora {
-    static int contador = 0;
+public class Multiplicacao extends Calculadora {
 
     public Multiplicacao() {
 
@@ -13,10 +12,5 @@ public class Multiplicacao implements Calculadora {
         System.out.println(valores[0] + " * " + valores[1] + " = " + multiplicacao);
 
         contador();
-    }
-
-    @Override
-    public int contador() {
-        return Multiplicacao.contador++;
     }
 }
