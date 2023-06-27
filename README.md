@@ -1,20 +1,69 @@
-# Primeiro-Desafio-Mentoria
-Desenvolvendo uma calculadora utilizando a linguagem Java. A calculadora tem as funcionalidades básicas: somar, subtrair, multiplicar e dividir.
+# Primeiro Desafio de Mentoria - Calculadora em Java
 
-Descrição do desafio que o Mentor Tiago passou: 
+Este repositório contém uma solução para o primeiro desafio de mentoria, que consiste no desenvolvimento de uma calculadora básica utilizando a linguagem Java. A calculadora possui as funcionalidades de soma, subtração, multiplicação e divisão.
 
-** Desafio 1 **
+## Descrição do Desafio
 
-#funções #usoDoStatic #parâmetros #retorno #estruturaDeRepetição #variáveis #tiposDeDados #operadores #condicionais
+Implemente uma calculadora em Java que atenda aos seguintes requisitos:
 
-Desenvolva uma calculadora utilizando a linguagem Java. A calculadora deve ter as funcionalidades básicas: somar, subtrair, multiplicar e dividir.
+1. Utilize métodos estáticos para implementar as funcionalidades de soma, subtração, multiplicação e divisão.
+2. Utilize a estrutura de controle `switch case` para determinar qual operação realizar.
+3. Os métodos devem receber os valores a serem operados como parâmetros e retornar o resultado da operação.
+4. Implemente uma funcionalidade adicional que conte a quantidade de operações realizadas na calculadora. Essa funcionalidade deve ser implementada utilizando uma variável estática.
+5. O método responsável por contar as operações deve retornar a quantidade total de operações realizadas.
 
-- Implemente as funcionalidades mencionadas como métodos ESTÁTICOS;
-- Implemente as funcionalidades mencionadas utilizando o conceito de SWITCH CASE;
-- Os métodos deverão receber os valores a serem operados como parâmetros;
-- Os métodos deverão retornar o resultado da operação.
+## Como utilizar a calculadora
 
-Essa calculadora também terá uma outra funcionalidade: ela retorna a quantidade de operações realizadas na calculadora. Exemplo: se o usuário fez 3 operações de cálculo, a quantidade de operações realizadas é igual a 3.
+1. Clone este repositório em sua máquina local:
 
-- Implemente essa funcionalidade utilizando o conceito de variável ESTÁTICA.
-- O método deverá retornar a quantidade de operações.
+   ```
+   git clone https://github.com/seu-usuario/primeiro-desafio-mentoria.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```
+   cd primeiro-desafio-mentoria
+   ```
+
+3. Compile os arquivos do projeto:
+
+   ```
+   javac Calculator.java
+   ```
+
+4. Execute o programa principal:
+
+   ```
+   java Calculator
+   ```
+
+5. Siga as instruções exibidas no console para realizar as operações desejadas.
+
+## Contribuição
+
+Contribuições para melhorias deste projeto são bem-vindas! Se você deseja contribuir, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie uma nova branch com a sua contribuição:
+
+   ```
+   git checkout -b minha-contribuicao
+   ```
+
+3. Faça as alterações e adicione commits descritivos:
+
+   ```
+   git commit -m "Descrição das alterações"
+   ```
+
+4. Envie as alterações para o seu repositório fork:
+
+   ```
+   git push origin minha-contribuicao
+   ```
+
+5. Abra um Pull Request neste repositório, descrevendo suas alterações.
+
+
+Aproveite a calculadora e divirta-se com os cálculos! 🧮🔢
